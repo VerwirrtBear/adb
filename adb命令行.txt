@@ -1,0 +1,28 @@
+启动微信
+adb shell am start com.tencent.mm/com.tencent.mm.ui.LauncherUI
+模拟点击
+adb shell input tap x y
+模拟输入
+adb shell input text 'aaa'
+传输文件 ex:
+adb push C:\Users\24327\Desktop\新建文件夹\ico\A.jpg /sdcard/tencent/MicroMsg/WeiXin/A.jpg
+刷新文件夹
+adb shell am broadcast -a android.intent.action.MEDIA_MOUNTED -d file:///sdcard
+清空文件
+adb shell rm /sdcard/DCIM/100ANDRO/*.jpg  
+
+
++号坐标 （1014，88） 
+adb shell input tap 1014 88
+
+扫一扫坐标 （ 900， 400）
+adb shell input tap 900 400
+
+关闭弹窗 （815 ，842）
+
+更多 ...（1015 ，85）
+adb shell input tap 1015 85
+相册图片（100，1750）
+adb shell input tap 100 1750
+选择二维码（410，250）
+adb shell input tap 410 250
